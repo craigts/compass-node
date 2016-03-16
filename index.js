@@ -48,7 +48,7 @@ function render(file, opts) {
       data
     ].join('\n'); 
 
-    sass.render(merge(param, opts, [
+    sass.renderSync(merge(param, opts, [
       'success',
       'error',
       'imagePath',
